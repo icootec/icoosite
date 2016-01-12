@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="icoo" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="icoo" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="icoo" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="icoo" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/">
+    <title>Icoo - Data Marketing</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="/css/component.css" >
+    <link rel="stylesheet" href="/css/form.css" >
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <nav class="container-fluid" role="navegation" id="navbar">
+        <div class="col-xs-2">
+            <a href="/" class="btn-menu color-material-indigo"><i class="material-icons">dialpad</i></a>
+        </div>
+        <div class="col-xs-8">
+            <a href="/" class="btn-menu color-material-cyan"><i class="material-icons">home</i></a>
+            <a href="/empresa" class="btn-menu color-material-cyan"><i class="material-icons">business</i></a>
+            <a href="/servicos" class="btn-menu color-material-cyan"><i class="material-icons">build</i></a>
+            <a href="/solucoes" class="btn-menu color-material-cyan"><i class="material-icons">touch_app</i></a>
+            <a href="/blog" class="btn-menu color-material-cyan"><i class="material-icons">comment</i></a>
+        </div>
+        <div class="col-xs-2">
+            <input type="text" name="name" value="pesquisar">
+        </div>
+    </nav>
+<!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please
+      <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    <div class="container-fluid" ng-view></div>
+    <section class="col-xs-12 img-responsive">
+        <div class="row">
+            <article class="home">
+                <header class="home">
+                    <p>VEJA SEU CLIENTE COM NITIDEZ!</p>
+                    <p>Saiba como desenvolver as ferramentas, métricas e processos necessários para envolver o consumidor moderno!</p>
+                    <mark ng-click="fadeAnimation = !fadeAnimation">Quero saber!</mark>
+                    <div class="anima-fad-eease" ng-show="fadeAnimation">
+                        <section>
+            				<form id="theForm" class="simform" autocomplete="off">
+            					<div class="simform-inner">
+            						<ol class="questions">
+            							<li>
+            								<span><label for="q1">What's your favorite movie?</label></span>
+            								<input id="q1" name="q1" type="text"/>
+            							</li>
+            							<li>
+            								<span><label for="q2">Where do you live?</label></span>
+            								<input id="q2" name="q2" type="text"/>
+            							</li>
+            							<li>
+            								<span><label for="q3">What time do you got to work?</label></span>
+            								<input id="q3" name="q3" type="text"/>
+            							</li>
+            							<li>
+            								<span><label for="q4">How do you like your veggies?</label></span>
+            								<input id="q4" name="q4" type="text"/>
+            							</li>
+            							<li>
+            								<span><label for="q5">What book inspires you?</label></span>
+            								<input id="q5" name="q5" type="text"/>
+            							</li>
+            							<li>
+            								<span><label for="q6">What's your profession?</label></span>
+            								<input id="q6" name="q6" type="text"/>
+            							</li>
+            						</ol><!-- /questions -->
+            						<button class="submit" type="submit">Send answers</button>
+            						<div class="controls">
+            							<button class="next"></button>
+            							<div class="progress"></div>
+            							<span class="number">
+            								<span class="number-current"></span>
+            								<span class="number-total"></span>
+            							</span>
+            							<span class="error-message"></span>
+            						</div><!-- / controls -->
+            					</div><!-- /simform-inner -->
+            					<span class="final-message"></span>
+            				</form><!-- /simform -->
+            			</section>
+                    </div>
+                </header>
+            </article>
+        </div>
+    </section>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/stepsForm.js"></script>
+</body>
+</html>
