@@ -44,7 +44,7 @@ br { clear: both; }
   margin-right: 5em;
 }
 #navbar {
-	background: hsla(267, 75%, 31%, 1.0);
+	background: hsla(267, 75%, 31%, 0.9);
 	padding: 5px;
 }
 
